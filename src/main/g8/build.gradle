@@ -3,6 +3,10 @@ version = '$version$'
 
 apply plugin: 'groovy'
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
